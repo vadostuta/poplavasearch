@@ -12,11 +12,10 @@
 }
 
 .nav-item {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .nav-item .fa {
-  margin-right: 0.25rem;
   font-size: 1rem;
 }
 
@@ -36,5 +35,8 @@
     background-repeat: no-repeat;
     background-size: 170% auto;
     height: 42vw;
+  }
+  .nav-item {
+    /* margin-right: 10px; */
   }
 }
