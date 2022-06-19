@@ -1,1 +1,7 @@
-# poplavasearch
+# poplava search
+frontend для пошуку відео з таймкодами на каналі [Право на поплаву](https://www.youtube.com/c/Pravonapoplavu/).
+Загалом наразі це MVP, планую в подальшому доповнювати і апдейтити при потребі. тому можете кидати ідеї.
+
+## По json файлі і звідки беру дані
+генерує json файл [тут](https://github.com/vadostuta/getPoplavaTimecodeData)
+мб варто було б в базу даних побавитись і тд. але шоб шо? наразі свою задачу виконує.
