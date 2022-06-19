@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  width: 100%;
+}
+
+.collapse:not(.show) {
+  display: flex!important;
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item .fa {
+  margin-right: 0.25rem;
+  font-size: 1rem;
+}
+
+.hero {
+  background-image: url(./bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 17vw;
+}
+
+
+@media only screen and (max-width: 390px) {
+  .hero {
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 170% auto;
+    height: 42vw;
+  }
+}

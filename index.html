@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Право на поплава пошук</title>
-  <link rel="stylesheet" href="./bootstrap.min.css">
-</head>
-<body>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6 m-auto">
-        <h3 class="text-center mb-3">
-          Право на поплаву
-        </h3>
-        <div class="form-group">
-          <input
-            type="text"
-            id="search"
-            class="form-control form-control-lg"
-            placeholder="Введіть himars до прикладу">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Право на поплава пошук</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/cc553a8e6e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/c/Pravonapoplavu/about" target="_blank">про поплаву</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/vadostuta/poplavasearch"><i class="fa fa-github"></i> GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" rel="noopener" class="nav-link" href="https://twitter.com/vadoshere"><i class="fa fa-twitter"></i> Twitter</a>
+            </li>
+          </ul>
         </div>
-        <div id="match-list"></div>
+      </div>
+    </nav>
+    <div class="hero"></div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <div class="form-group">
+            <input
+              type="text"
+              id="search"
+              class="form-control form-control-lg"
+              placeholder="Введіть himars для прикладу">
+          </div>
+          <div id="match-list"></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
