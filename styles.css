@@ -19,6 +19,25 @@
   font-size: 1rem;
 }
 
+.fa-youtube {
+  margin-right: 7px;
+}
+
+.fa-solid.fa-magnifying-glass {
+  font-size: 24px;
+  position: absolute;
+  top: 44px;
+  left: 20px;
+}
+
+.form-group {
+  position: relative;
+}
+
+#search {
+  padding-left: 56px;
+}
+
 .hero {
   background-image: url(./bg.jpg);
   background-position: center;
@@ -27,7 +46,6 @@
   height: 17vw;
 }
 
-
 @media only screen and (max-width: 390px) {
   .hero {
     background-image: url(./bg.jpg);
@@ -35,8 +53,5 @@
     background-repeat: no-repeat;
     background-size: 170% auto;
     height: 42vw;
-  }
-  .nav-item {
-    /* margin-right: 10px; */
   }
 }
