@@ -1,5 +1,6 @@
 
 [build]
+  base = "backend"
   publish = "frontend"  # Specify the folder to publish for your frontend
 
 [functions]
