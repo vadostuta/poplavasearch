@@ -1,4 +1,4 @@
-// const { schedule } = require("@netlify/functions");
+const { schedule } = require("@netlify/functions");
 // const { initJSON } = require("../../initJSON");
 
 const dotenv = require('dotenv').config()
@@ -324,5 +324,5 @@ const handler = async (event, context) => {
   };
 };
 // exports.handler = schedule("@hourly", handler);
-exports.handler = schedule("00 22 * * *", handler);
+exports.handler = schedule("26 22 * * *", handler);
 // exports.handler = schedule('58 22 * * *', exports.handler);
