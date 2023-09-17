@@ -324,5 +324,5 @@ const handler = async (event, context) => {
   };
 };
 // exports.handler = schedule("@hourly", handler);
-exports.handler = schedule("26 22 * * *", handler);
+exports.handler = schedule("27 20 * * *", handler);
 // exports.handler = schedule('58 22 * * *', exports.handler);
