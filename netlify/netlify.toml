@@ -1,2 +1,2 @@
-[functions."timecode-function"]
-schedule = "@daily"
+[build]
+  functions = "./functions"

@@ -1,0 +1,6 @@
+export const apiKey = 'AIzaSyAUobR-2oSpGIPSxFZwwluVxXJMW-nNdBg'
+export const authDomain = 'poplava-544f3.firebaseapp.com'
+export const projectId = 'poplava-544f3'
+export const storageBucket = 'poplava-544f3.appspot.com'
+export const messagingSenderId = '348168499094'
+export const appId = '1:348168499094:web:f11770fa4a48ff987fb7b7'

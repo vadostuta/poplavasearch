@@ -1,9 +1,12 @@
+import { apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId } from '../config.js';
+
 const search = document.getElementById('search');
 const matchList = document.getElementById('match-list');
 
+let timecodeData = []
+
 const searchStates = async searchText => {
-  const res = await fetch('./poplava.json');
-  const states = await res.json()
+  const states = timecodeData
 
   // Mapping to one string, for easier searching
   const formatChapterData = arr => {
@@ -90,4 +93,38 @@ const outputHtml = (matches, searchText) => {
   }
 }
 
-search.addEventListener('input', () => searchStates(search.value))
+const fetchJsonFile = () => {
+  const fileName = 'poplava.json'
+  const storageRef = firebase.storage().ref()
+  const fileRef = storageRef.child(fileName)
+
+  return fileRef
+    .getDownloadURL()
+    .then(url => fetch(url).then(response => response.json()))
+    .catch(error => {
+      console.error('Error fetching JSON:', error)
+    })
+}
+
+async function init() {
+  const firebaseConfig = {
+    apiKey,
+    authDomain,
+    projectId,
+    storageBucket,
+    messagingSenderId,
+    appId,
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  try {
+    const jsonData = await fetchJsonFile();
+    timecodeData = jsonData
+    search.addEventListener('input', () => searchStates(search.value));
+  } catch (error) {
+    console.error('Error fetching JSON:', error);
+  }
+}
+
+init();
