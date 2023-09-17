@@ -1,0 +1,6 @@
+
+[build]
+  publish = "frontend"  # Specify the folder to publish for your frontend
+
+[functions]
+  directory = "backend/netlify/functions"  # Specify the directory for your serverless functions
