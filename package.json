@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@netlify/functions": "^2.0.2",
-    "dotenv": "^9.0.2",
-    "googleapis": "^103.0.0"
-  }
-}

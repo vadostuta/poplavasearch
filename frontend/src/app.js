@@ -100,11 +100,16 @@ const fetchJsonFile = () => {
 
   return fileRef
     .getDownloadURL()
-    .then(url => fetch(url).then(response => response.json()))
+    .then(url => fetch(url, {
+        headers: {
+          Accept: 'application/json',
+        },
+    }).then(response => response.json()))
     .catch(error => {
       console.error('Error fetching JSON:', error)
     })
 }
+
 
 async function init() {
   const firebaseConfig = {
