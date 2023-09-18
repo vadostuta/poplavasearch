@@ -10,7 +10,8 @@ const searchStates = async searchText => {
 
   // Mapping to one string, for easier searching
   const formatChapterData = arr => {
-    return arr.reduce((prev, curr) => {
+
+    return JSON.parse(arr).reduce((prev, curr) => {
       const data = curr.chapters.map(el => `${el} | ${curr.videoId} | ${curr.title} | ${curr.thumbnails}`)
       
       return [...prev, ...data]
